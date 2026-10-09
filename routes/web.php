@@ -7,9 +7,10 @@ Route::inertia('/', 'welcome')->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
+    Route::resource('carreras', CarreraController::class);
 });
 
-Route::resource('carreras', CarreraController::class);
+//Route::resource('carreras', CarreraController::class);
 Route::get('/carreras/{carrera}/plan', [CarreraController::class, 'plan'])
     ->name('carreras.plan');
 
