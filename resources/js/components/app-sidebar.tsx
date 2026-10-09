@@ -22,6 +22,11 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+    {
+        title: 'Carreras',
+        href: '/carreras',
+        icon: BookOpen,
+    }
 ];
 
 const footerNavItems: NavItem[] = [
