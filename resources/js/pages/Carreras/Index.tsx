@@ -177,7 +177,7 @@ export default function Index({
                                 href={`/carreras/${carrera.id}/plan`}
                                 title="Descargar plan de estudio"
                             >
-                                Plan
+                                Ver plan de estudios
                             </a>
 
                             </td>
